@@ -93,6 +93,7 @@ TABELA SITUAÇÃO DEVEDOR
 
 situacaoDevedor = r'data\005.csv'
 df_situDev = pd.read_csv(situacaoDevedor,sep=',')
+print(df_Tcda[df_Tcda.duplicated(subset=['numCDA'])])
 
 df_situDev.rename(columns={
     "descsituacaodevedor": "descSituacaoDevedor"
